@@ -94,8 +94,14 @@ export default function CreateHunt() {
 
   const [taskNames, setTaskNames] = React.useState([]);
 
+  const handleTasksChange = (event) => {
+    debugger;
+    setTaskNames(event.target.value);
+  };
+
   const handleChange = (event) => {
     const name = event.target.name;
+    debugger;
     setState({
       ...state,
       [name]: event.target.value,
@@ -153,7 +159,7 @@ export default function CreateHunt() {
                     id="tasksSelect"
                     multiple
                     value={taskNames}
-                    onChange={handleChange}
+                    onChange={handleTasksChange}
                     input={<Input id="tasksSelect" />}
                     renderValue={(selected) => (
                       <div className={classes.chips}>
