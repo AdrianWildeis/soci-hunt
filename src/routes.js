@@ -24,6 +24,7 @@ import LocationOn from "@material-ui/icons/LocationOn";
 import Login from "views/login/login.js";
 import SignUp from "views/signup/signup.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
+import CreateHunt from "views/CreateHunt/CreateHunt.js"
 import Maps from "views/Maps/Maps.js";
 import RequestMaps from "views/RequestsMap/RequestMap.js";
 import AskForHelp from "./views/AskForHelp/AskForHelp";
@@ -55,6 +56,15 @@ const dashboardRoutes = [
     rtlName: "ملف تعريفي للمستخدم",
     icon: Dashboard,
     component: UserProfile,
+    layout: "/soci-hunt",
+    requiredLogin: true
+  },
+  {
+    path: "/create-hunt",
+    name: "Create Hunt",
+    rtlName: "ملف تعريفي للمستخدم",
+    icon: Dashboard,
+    component: CreateHunt,
     layout: "/soci-hunt",
     requiredLogin: true
   },
