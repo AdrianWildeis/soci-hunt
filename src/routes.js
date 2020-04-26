@@ -20,6 +20,7 @@ import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
 import LiveHelpIcon from '@material-ui/icons/LiveHelp';
 import LocationOn from "@material-ui/icons/LocationOn";
+import BuildIcon from '@material-ui/icons/Build';
 // core components/views for Admin layout
 import Login from "views/login/login.js";
 import SignUp from "views/signup/signup.js";
@@ -63,7 +64,7 @@ const dashboardRoutes = [
     path: "/create-hunt",
     name: "Create Hunt",
     rtlName: "ملف تعريفي للمستخدم",
-    icon: Dashboard,
+    icon: BuildIcon,
     component: CreateHunt,
     layout: "/soci-hunt",
     requiredLogin: true
